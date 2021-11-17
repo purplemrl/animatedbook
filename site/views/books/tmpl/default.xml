@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Display Book List" option="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_VIEW_DEFAULT_DESC">
+        <message>
+            <![CDATA[COM_DAVIDIX_ANIMATEDBOOK_BOOKS_VIEW_DEFAULT_DESC]]>
+        </message>
+	</layout>
+	
+	<!-- Add fields to the parameters object for the layout. -->
+	<fields name="params">
+		<fieldset name="basic" label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_VIEW_LIST_OPTIONS">
+			<field
+				name="show_filters"
+				type="list"
+				label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_SHOW_FILTERS_LABEL"
+				description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_SHOW_FILTERS_DESC"
+				default="1"
+			>
+				<option value="0">JHIDE</option>
+				<option value="1">JSHOW</option>
+			</field>
+		</fieldset>
+	</fields>
+</metadata>

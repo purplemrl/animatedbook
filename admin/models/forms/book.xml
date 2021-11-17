@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="utf-8"?>
+<form>
+	<fieldset addfieldpath="/administrator/components/com_categories/models/fields">
+		<field
+			name="asset_id"
+			type="hidden"
+			filter="unset"
+		/>
+		<field 
+			name="id"
+			type="text"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_ID_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_ID_DESC"
+			maxlength="10"
+			filter="INTEGER"
+			class="readonly"
+			readonly="true"
+		/>
+		<field
+			name="type"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_TYPE_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_TYPE_DESC"
+			type="text"
+			maxlength="12"
+			class="text"
+		>
+			<option value="Book">COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_TYPE_OPTION_BOOK</option>
+			<option value="Notebook">COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_TYPE_OPTION_NOTEBOOK</option>
+		</field>
+		<field
+			name="name"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_NAME_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_NAME_DESC"
+			type="input-xxlarge input-large-text"
+			maxlength="111"
+		>
+		</field>
+		<field
+			name="author"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_AUTHOR_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_AUTHOR_DESC"
+			type="text"
+			maxlength="50"
+		>
+		</field>
+		<field
+			name="description"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_DESCRIPTION_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_DESCRIPTION_DESC"
+			type="editor"
+			maxlength="900"
+		>
+		</field>
+		<field
+			name="short_description"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_SHORT_DESCRIPTION_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_SHORT_DESCRIPTION_DESC"
+			type="text"
+			maxlength="111"
+		>
+		</field>
+	
+		<field
+			name="book_direction"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_BOOK_DIRECTION_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_BOOK_DIRECTION_DESC"
+			type="text"
+			maxlength="12"
+		>
+			<option value="rtl">COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_BOOK_DIRECTION_OPTION_RTL</option>
+			<option value="ltr">COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_BOOK_DIRECTION_OPTION_LTR</option>
+		</field>
+		<field
+			name="link1"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK1_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK1_DESC"
+			type="text"
+			maxlength="111"
+		>
+		</field>
+		<field
+			name="link1_src"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK1_SRC_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK1_SRC_DESC"
+			type="url"
+			maxlength="211"
+		>
+		</field>
+		
+		<field
+			name="ribbon_text"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_RIBBON_TEXT_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_RIBBON_TEXT_DESC"
+			type="text"
+			maxlength="12"
+		>
+		</field>
+		<field
+			name="ribbon_color"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_RIBBON_COLOR_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_RIBBON_COLOR_DESC"
+			type="color"
+			maxlength="16"
+		>
+		</field>
+		<field
+			name="cover_top_color"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_TOP_COLOR_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_TOP_COLOR_DESC"
+			type="color"
+			maxlength="16"
+		>
+		</field>
+		<field
+			name="cover_buttom_color"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_BUTTOM_COLOR_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_BUTTOM_COLOR_DESC"
+			type="color"
+			maxlength="16"
+		>
+		</field>
+		<field
+			name="cover_image"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_IMAGE_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_COVER_IMAGE_DESC"
+			type="media"
+			maxlength="111"
+		>
+		</field>
+		<field
+			name="link2"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK2_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK2_DESC"
+			type="text"
+			maxlength="12"
+		>
+		</field>
+		<field
+			name="link2_src"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK2_SRC_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_LINK2_SRC_DESC"
+			type="url"
+			maxlength="211"
+		>
+		</field>
+		<field
+			name="alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			hint="JFIELD_ALIAS_PLACEHOLDER"
+			class="inputbox" size="40"
+		/>
+		<field
+			name="catid"
+			type="categoryedit"
+			extension="com_davidix_animatedbook"
+			label="JCATEGORY"
+			description="JFIELD_CATEGORY_DESC"
+			class="inputbox"
+			required="true"
+		/>
+		<field
+			name="published"
+			type="list"
+			label="JSTATUS"
+			description="JFIELD_PUBLISHED_DESC"
+			class="chzn-color-state"
+			size="1"
+			default="1"
+			filter="interval"
+		>
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+			<option value="2">JARCHIVED</option>
+			<option value="-2">JTRASHED</option>
+		</field>
+		<field
+			name="checked_out"
+			type="hidden"
+			label="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_CHECKED_OUT_LABEL"
+			description="COM_DAVIDIX_ANIMATEDBOOK_BOOKS_FIELD_CHECKED_OUT_DESC"
+			filter="UNSET"
+		/>
+		<field
+			name="created"
+			type="calendar"
+			label="JGLOBAL_FIELD_CREATED_LABEL"
+			description="JGLOBAL_FIELD_CREATED_DESC"
+			class="readonly"
+		/>
+		<field
+			name="created_by"
+			type="user"
+			label="JGLOBAL_FIELD_CREATED_BY_LABEL"
+			description="JGLOBAL_FIELD_CREATED_BY_DESC"
+		/>
+		<field
+			name="created_by_alias"
+			type="text"
+			label="JFIELD_ALIAS_LABEL"
+			description="JFIELD_ALIAS_DESC"
+			class="inputbox" size="20"
+		/>
+		<field
+			name="modified"
+			type="calendar"
+			label="JGLOBAL_FIELD_MODIFIED_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_LABEL"
+			class="readonly"
+		/>
+		<field
+			name="modified_by"
+			type="user"
+			label="JGLOBAL_FIELD_MODIFIED_BY_LABEL"
+			description="JGLOBAL_FIELD_MODIFIED_BY_DESC"
+		/>
+		<field
+			name="publish_up"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_UP_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_UP_DESC"
+			class="inputbox" format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>
+		<field
+			name="publish_down"
+			type="calendar"
+			label="JGLOBAL_FIELD_PUBLISH_DOWN_LABEL"
+			description="JGLOBAL_FIELD_PUBLISH_DOWN_DESC"
+			class="inputbox"
+			format="%Y-%m-%d %H:%M:%S"
+			labelclass="control-label"
+			filter="user_utc"
+		/>
+		<field
+			name="language"
+			type="contentlanguage"
+			label="JFIELD_LANGUAGE_LABEL"
+			description="JFIELD_LANGUAGE_DESC"
+			class="inputbox"
+		>
+			<option value="*">JALL</option>
+		</field>
+		<field
+			name="version"
+			type="text"
+			label="JGLOBAL_MODIFIED"
+			description="JGLOBAL_MODIFIED"
+			readonly="true"
+			filter="unset"
+			class="readonly"
+		/>
+		<field
+			name="hits"
+			type="text"
+			label="JGLOBAL_HITS"
+			description="JGLOBAL_LIST_HITS_LABEL"
+			readonly="true"
+			filter="unset"
+			class="readonly"
+		/>
+		<field
+			name="metakey"
+			type="textarea"
+			label="JFIELD_META_KEYWORDS_LABEL"
+			description="JFIELD_META_KEYWORDS_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30"
+		/>
+		<field
+			name="metadesc"
+			type="textarea"
+			label="JFIELD_META_DESCRIPTION_LABEL"
+			description="JFIELD_META_DESCRIPTION_DESC"
+			class="inputbox"
+			rows="3"
+			cols="30"
+		/>
+		<field
+			name="access"
+			type="accesslevel"
+			label="JFIELD_ACCESS_LABEL"
+			description="JFIELD_ACCESS_DESC"
+			default="1"
+			class="inputbox"
+			size="1"
+		/>
+		<field
+			name="rules"
+			type="rules"
+			label="JFIELD_RULES_LABEL"
+			translate_label="false"
+			class="inputbox"
+			filter="rules"
+			component="com_davidix_animatedbook"
+			section="book"
+			validate="rules"
+		/>
+	</fieldset>
+	
+	
+	
+	<fields name="metadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+		<fieldset name="jmetadata" label="JGLOBAL_FIELDSET_METADATA_OPTIONS">
+			<field
+				name="robots"
+				type="list"
+				label="JFIELD_METADATA_ROBOTS_LABEL"
+				description="JFIELD_METADATA_ROBOTS_DESC"
+			>
+				<option value="">JGLOBAL_USE_GLOBAL</option>
+				<option value="index, follow">JGLOBAL_INDEX_FOLLOW</option>
+				<option value="noindex, follow">JGLOBAL_NOINDEX_FOLLOW</option>
+				<option value="index, nofollow">JGLOBAL_INDEX_NOFOLLOW</option>
+				<option value="noindex, nofollow">JGLOBAL_NOINDEX_NOFOLLOW</option>
+			</field>
+			<field
+				name="rights"
+				type="text"
+				label="JFIELD_METADATA_RIGHTS_LABEL"
+				description="JFIELD_METADATA_RIGHTS_DESC"
+				size="20"
+			/>
+		</fieldset>
+	</fields>
+	
+
+</form>
